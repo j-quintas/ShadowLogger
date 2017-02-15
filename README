@@ -1,0 +1,20 @@
+DISCLAIMER:
+
+This is a project that i started 5 years ago, it was made for educational purposes and i've used it for years.
+Now that i stopped using it, i decided to share it.
+
+***It may not work out of the box because i edited some files manually to remove sensitive/personal blocks of code, and since i don't have VS right now i can't test if it can open it, but the code is all there and will work since i didn't break anything with the relevant code (i think).
+
+FEATURES:
+
+* The keylogging is fully functional, however, it's in PT keyboard layout, and i won't change it for another, should be fairly easy for you to do so.
+* It has remote command feature, that's a little primitive and simple but i didn't need anything else, it query's a txt file that you need to host somewhere for any commands, the commands must be separated by a new line, and any commands that involve file path's the space character " " must be "?" .
+*It spawns a window impossible to be seen by the user.
+*Has both Clipboard Logging and application (window) changing logging, A.K.A Window Title.
+*Has an auto-updater that functions pretty much the same way the command feature, just this time it checks if there's a version newer and the download link to perform the update.
+*Detects windows events (shutdown, logoff, suspend, etc)
+*Gets all info you may need from the system with every log
+*The command feature also has a "Process Management" section that let's you make all kinds of process manipulation with the permissions the application has, read up the source to know how it works.
+
+**Had some other personal features which were removed for this commit, but you may add anything else you need in this.
+

